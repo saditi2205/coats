@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Coats</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="css/bootstrap.min.css" rel="stylesheet">
+<link href="css/animate.min.css" rel="stylesheet">
+    <link href="css/bootstrap-dropdownhover.min.css" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="css/jquery.dataTables.min.css">
+	<link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+<link href="css/custom.css" rel="stylesheet">
+
+</head>
+<body>
+	<div class="container">
+		<div class="header">
+			<div class="row">
+					
+					<h1 class="coats"><a href=""><img src="images/coatsplc_logo.svg" alt="Coats logo" height="50" width="50" class="coats-logo"> <span>Coats eComm - TRIMS</span></a></h1>
+					<ul class="nav navbar-nav navbar-right">
+						<li><a href=""><span class="fa fa-shopping-cart" aria-hidden="true"></span> <span class="hidden-xs">Coats eComm</span></a></li>
+						<li><a href=""><span class="fa fa-superpowers" aria-hidden="true"></span> <span class="hidden-xs">Coats Colour Express</span></a></li>
+						<li><a href=""><span class="fa fa-spinner" aria-hidden="true"></span> <span class="hidden-xs">Opti Express</span></a></li>
+						<li class="dropdown">  
+							  <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+								<span class="hidden-xs">Tom Jones</span>
+								<span class="caret hidden-xs"></span><a class="visible-xs" href=""><span class="fa fa-user" aria-hidden="true"></span></a>
+							  </button>
+							  <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+								<li><a href="#"> Your Profile</a></li>
+								<li><a href="#"> Logout</a></li>
+							  </ul>
+						</li>
+					</ul>
+			</div>
+		</div>
+	</div>
+	<nav class="nav-menu">
+		<div class="container">
+			<div class="top-nav">
+				<div class="navbar-header">
+				  <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				  </button>
+				  <a class="navbar-brand" href="#">Home</a>
+				</div>
+				<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+					<ul class="nav navbar-nav">
+						<li class="dropdown"><a href="" class="dropdown-toggle dropdownhover-bottom" data-toggle="dropdown" data-hover="dropdown">Create Order <span class="caret"></span></a>
+						  <ul class="dropdown-menu">
+							<li><a href="#">Direct Upload</a></li>
+							<li><a href="#">Direct Entry</a></li>
+							<li><a href="#">From Existing Order</a></li>							
+						  </ul>
+						</li>
+						<li class="dropdown"><a href="" class="dropdown-toggle dropdownhover-bottom" data-toggle="dropdown" data-hover="dropdown">Outstanding Orders <span class="caret"></span></a>
+							<ul class="dropdown-menu">
+								<li><a href="#">Open Orders</a></li>
+								<li><a href="#">Draft Orders</a></li>
+								<li><a href="#">Completed Orders</a></li>
+								<li><a href="#">Cancelled Orders</a></li>
+							</ul>
+						</li>
+						<li><a href="">Failed Orders</a></li>
+						<li><a href="">Product Availability Check</a></li>
+						<li class="dropdown"><a href="" class="dropdown-toggle dropdownhover-bottom" data-toggle="dropdown" data-hover="dropdown">Reports <span class="caret"></span></a>
+							<ul class="dropdown-menu">
+								<li><a href="#">Invoices</a></li>
+								<li><a href="#">Delivery Notes</a></li>
+								<li><a href="#">PO Summary</a></li>
+								<li><a href="#">Oustanding Payments</a></li>
+								<li><a href="#">Order Approval History</a></li>
+							</ul>
+						</li>
+						<li class="dropdown"><a href="">New Features</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</nav>
+	<div class="main-content">
+	<div class="container">
+	<div class="dashboard-content">
+		<div class="col-lg-9 col-md-9 col-sm-9 col-xs-12 left-section">
+		<div>
+		<h3>Your watched orders</h3>
+		<div class="no_display">
+			<p><b>You currently have no watched orders.</b></p>
+			<p>When you place an order you can choose to <b>watch</b> it. A summary of all watched orders apperas on
+			your dashboard so you can quickly see status of orders that are important to you.
+			</p>
+		</div>
+		<table id="example" class="dataTable table-bordered">
+				<thead>
+					<tr>
+						<th class="sorting">Your PO</th>
+						<th class="sorting">eComm order no.</th>
+						<th class="sorting">Ship-to party</th>
+						<th class="sorting">Buyer</th>
+						<th class="sorting">Delivery Date</th>
+						<th class="sorting">Order status</th>
+						<th class="sorting">Created</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr class="clickable-row" data-href='#'>
+						<td>11018665</td>
+						<td>1131219</td>
+						<td>0043583</td>
+						<td>Lifeeasy</td>
+						<td>14/05/2016</td>
+						<td>Warehouse SOS</td>
+						<td>04/05/2016</td>
+					</tr>
+					<tr class="clickable-row" data-href='#'>
+						<td>11018652</td>
+						<td>1131218</td>
+						<td>0043580</td>
+						<td>Lifeeasy</td>
+						<td>24/05/2016</td>
+						<td>Warehouse SOS</td>
+						<td>04/05/2016</td>
+					</tr>
+					<tr class="clickable-row" data-href='#'>
+						<td>11018623</td>
+						<td>1131215</td>
+						<td>0043577</td>
+						<td>CITRA ABADI</td>
+						<td>12/06/2016</td>
+						<td>Hub SOS</td>
+						<td>02/05/2016</td>
+					</tr>
+					<tr class="clickable-row" data-href='#'>
+						<td>11018656</td>
+						<td>1131214</td>
+						<td>0043561</td>
+						<td>Lifeeasy</td>
+						<td>02/06/2016</td>
+						<td>Lab SOS</td>
+						<td>02/05/2016</td>
+					</tr>
+					<tr class="clickable-row" data-href='#'>
+						<td>11018655</td>
+						<td>1131212</td>
+						<td>0043560</td>
+						<td>CITRA ABADI</td>
+						<td>15/05/2016</td>
+						<td>Warehouse SOS</td>
+						<td>02/05/2016</td>
+					</tr>
+					<tr class="clickable-row" data-href='#'>
+						<td>11018664</td>
+						<td>1131215</td>
+						<td>0043577</td>
+						<td>Lifeeasy</td>
+						<td>20/05/2016</td>
+						<td>Hub SOS</td>
+						<td>02/05/2016</td>
+					</tr>
+					<tr class="clickable-row" data-href='#'>
+						<td>11018645</td>
+						<td>1131214</td>
+						<td>0043561</td>
+						<td>CITRA ABADI</td>
+						<td>22/05/2016</td>
+						<td>Lab SOS</td>
+						<td>02/05/2016</td>
+					</tr>
+					<tr class="clickable-row" data-href='#'>
+						<td>11018465</td>
+						<td>1131212</td>
+						<td>0043560</td>
+						<td>Lifeeasy</td>
+						<td>12/05/2016</td>
+						<td>Warehouse SOS</td>
+						<td>02/05/2016</td>
+					</tr>
+				</tbody>
+			</table>
+			<p class="view-all"><a href="">View all watched orders</a></p>
+		</div>	
+		<div class="row">
+		<div class="col-lg-6 col-md-6 col-sm-6">
+		<h3>Place Orders</h3>
+		<p class="hidden-xs"><a href="" class="btn btn-lg btn-order" id="order-upload">File Upload</a></p>
+		<p><a href="" class="btn btn-lg btn-order" id="order-manual">Manual Entry</a></p>
+		</div>
+		<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+		<h3>Product Availability Check</h3>
+		<div class="col-lg-11 col-md-11 col-sm-11 product_avail_chk">
+			<ul class="nav nav-tabs" role="tablist">
+				<li role="presentation" class="active"><a href="#trims" aria-controls="trims" role="tab" data-toggle="tab">Trims</a></li>
+				<li role="presentation"><a href="#threads" aria-controls="threads" role="tab" data-toggle="tab">Threads</a></li>
+			</ul>
+			<div class="tab-content">
+				<div role="tabpanel" class="tab-pane active" id="trims">
+					<select class="form-control" id="trims-num">
+						<option selected="" value="article no.">article no.</option>
+					</select>
+					<img class="img_shade" src="images/u348.png" alt="">
+					<input id="shade_code" class="form-control" type="text" value="shade">
+					<input id="trims_qty" class="form-control" type="text" value="2">
+					<a href="" class="btn btn-primary">Check</a>
+				</div>
+				<div role="tabpanel" class="tab-pane" id="threads">					
+					<select class="form-control" id="thread-brand">
+						<option value="Thread brand">Thread brand</option>
+						<option value="admiral ">admiral </option>
+						<option value="astra ">astra </option>
+						<option value="dual duty ">dual duty </option>
+						<option value="epic ">epic </option>
+						<option value="epic fr ">epic fr </option>
+						<option value="gral ">gral </option>
+						<option value="gramax ">gramax </option>
+						<option value="nylbond ">nylbond </option>
+						<option value="nymo ">nymo </option>
+						<option value="star embroidery ">star embroidery </option>
+						<option value="star monocord ">star monocord </option>
+						<option value="star nylon ">star nylon </option>
+						<option value="Sylko ">Sylko </option>
+						<option value="webflex">webflex</option>
+					</select>
+					<select class="form-control" id="ticket-num">
+						<option value="Ticket">Ticket</option>
+						<option value="000 ">000 </option>
+						<option value="005 ">005 </option>
+						<option value="006 ">006 </option>
+						<option value="008 ">008 </option>
+						<option value="010 ">010 </option>
+						<option value="013 ">013 </option>
+						<option value="015 ">015 </option>
+						<option value="016 ">016 </option>
+						<option value="018 ">018 </option>
+						<option value="020 ">020 </option>
+						<option value="024 ">024 </option>
+						<option value="025 ">025 </option>
+						<option value="028 ">028 </option>
+						<option value="030 ">030 </option>
+						<option value="031 ">031 </option>
+						<option value="036 ">036 </option>
+						<option value="040 ">040 </option>
+						<option value="041 ">041 </option>
+						<option value="045 ">045 </option>
+						<option value="050 ">050 </option>
+						<option value="060 ">060 </option>
+						<option value="075 ">075 </option>
+						<option value="080 ">080 </option>
+						<option value="090 ">090 </option>
+						<option value="100 ">100 </option>
+						<option value="110 ">110 </option>
+						<option value="120 ">120 </option>
+						<option value="140 ">140 </option>
+						<option value="150 ">150 </option>
+						<option value="160 ">160 </option>
+						<option value="180 ">180 </option>
+					</select>
+					<select class="form-control" id="thread-length">
+						<option value="Length">Length</option>
+					</select>
+					<select class="form-control" id="thread-fin">
+						<option value="Finish">Finish</option>
+					</select>
+					<a href="" class="btn btn-primary" id="threads-btn">Check</a>
+				</div>
+			</div>
+		
+		</div>		
+		</div>
+		</div>	
+		<div class="row">
+		<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+		<h3>Help</h3>
+		<div class="row">
+		<div class="col-lg-3 col-md-3 col-sm-4 col-xs-4">
+		<img class="small_img" src="images/u306.png" alt="">
+		</div>
+		<div class="col-lg-8 col-md-8 col-sm-8 col-xs-8 pad_left0">
+		<h4>Which thread is best for me?</h4>
+		<p>Proin sodales pulvinar tempor. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nam</p>
+		<h4><a href="">Product Help</a></h4>
+		</div>
+		</div>
+		</div>
+		<!-- <div class="col-lg-6 col-md-6 col-sm-6">
+		<h3>Product Availability Check</h3>
+		<div class="row">
+		<div class="col-lg-3 col-md-3 col-sm-3">
+		<img class="small_img" src="images/u306.png">
+		<img class="small_img_man" src="images/u312.png">
+		</div>
+		<div class="col-lg-8 col-md-8 col-sm-8 pad_left0">
+		<h4>Live help with Livelink</h4>
+		<p>Proin sodales pulvinar tempor. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nam</p>
+		<h4><a href="">Livelink</a></h4>
+		</div>
+		</div>
+		</div> -->
+		</div>
+		</div>				
+		<div class="col-lg-3 col-md-3 col-sm-3 col-xs-12 right-section">
+		<div>
+		<h3>Welcome Tom !</h3>
+		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo.</p>
+		</div>
+		<div>
+		<h3>Did you know...</h3>
+		<p>Proin sodales pulvinar tempor. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nam fermentum, nulla luctus pharetra vulputate, felis tellus mollis orci, sed rhoncus sapien nunc eget odio.</p>
+		<div class="img_wrapper">
+		<a href="">
+			<p><img alt="promo 1" src="images/promo_dummy.png"></p>
+			<p class="promo_text">CUSTOM OFFERS PROMO</p>
+			</a>
+        </div>
+		</div>
+		<div>
+		<h3>Contact</h3>
+		<p>Proin sodales pulvinar tempor. Cum sociis natoque penatibus et magnis dis parturient montes,
+		<span class="contact_link"><a href="">Contact</a></span></p>
+		</div>
+		<div class="img_wrapper">
+		<a href="">
+			<p><img alt="promo 2" src="images/promo_dummy.png"></p>
+			<p class="promo_text promo_text2">OPTI EXPRESS PROMO</p>
+			</a>
+        </div>
+		</div>
+		</div>
+	</div>
+	</div>
+	<footer>
+		<div class="container">	
+		<p class="text-center"><span>Copyright © 2011 - 2017 www.coats.com | All rights reserved | </span><span style="text-decoration:underline;">Privacy Policy</span><span> | </span><span style="text-decoration:underline;">Terms and Conditions</span></p>
+		</div>
+	</footer>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<!-- Bootstrap Dropdown Hover JS -->
+    <script src="js/bootstrap-dropdownhover.min.js"></script>
+	<script type="text/javascript" src="js/jquery.dataTables.min.js"></script>
+	<script type="text/javascript" src="js/dataTables.bootstrap.min.js"></script>
+	<script type="text/javascript" src="js/dataTables.responsive.min.js"></script>
+	<script type="text/javascript" src="js/responsive.bootstrap.min.js"></script>
+    <script src="js/custom.js"></script>
+</body>
+</html>
